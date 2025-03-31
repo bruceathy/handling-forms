@@ -26,7 +26,6 @@ export function NewOpinion() {
       return { errors, enteredValues: { title, body, userName } };
     }
 
-    //submit to backend
     await addOpinion({ title, body, userName });
     return { errors: null };
   }
